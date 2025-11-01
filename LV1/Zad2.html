@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prva Laboratorijska Vježba - Zadatak 2: OBRAZAC</title>
+</head>
+<body>
+
+    <header>
+        <h1><a href="Zad1.html">OBRAZAC</a></h1>
+    </header>
+
+    <form action="#" method="post"> 
+        <div>
+            <label for="korisnicko_ime">Korisničko ime:</label><br> 
+            <input type="text" 
+                   id="korisnicko_ime" 
+                   name="korisnicko_ime" 
+                   size="15" 
+                   maxlength="15" 
+                   placeholder="Unesite korisničko ime" 
+                   title="Polje za unos korisničkog imena"
+                   required> 
+            </div>
+
+        <div>
+            <label for="lozinka">Lozinka:</label><br> 
+            <input type="password" 
+                   id="lozinka" 
+                   name="lozinka" 
+                   size="15" 
+                   maxlength="15" 
+                   placeholder="Unesite lozinku" 
+                   title="Polje za unos lozinke"
+                   required>
+            </div>
+        
+        <div>
+            <label for="ocjena">Odaberite ocjenu:</label><br>
+            <select id="ocjena" name="ocjena" title="Popis 5 ocjena.">
+                <option value="" disabled selected>Odaberite...</option> 
+                <option value="nedovoljan">1 - Nedovoljan</option>
+                <option value="dovoljan">2 - Dovoljan</option>
+                <option value="dobar">3 - Dobar</option>
+                <option value="vrlo_dobar">4 - Vrlo dobar</option>
+                <option value="izvrstan">5 - Izvrstan</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="komentar">Tekstualno područje za poruku:</label><br>
+            <textarea id="komentar" 
+                      name="komentar" 
+                      rows="7" 
+                      cols="40" 
+                      placeholder="Unesite poruku ovdje..." 
+                      title="Područje za upis poruke (7 redaka, 40 znakova)"></textarea>
+            </div>
+
+        <fieldset title="Usmena ocjena studenta">
+            <legend>Usmena ocjena studenta:</legend>
+            <input type="radio" id="komunikativan" name="usmena_ocjena" value="komunikativan">
+            <label for="komunikativan">Komunikativan</label><br>
+            
+            <input type="radio" id="samostalan" name="usmena_ocjena" value="samostalan">
+            <label for="samostalan">Samostalan</label><br>
+            
+            <input type="radio" id="radisan" name="usmena_ocjena" value="radisan">
+            <label for="radisan">Radišan</label><br>
+            
+            <input type="radio" id="nista" name="usmena_ocjena" value="nista" checked>
+            <label for="nista">Ništa od navedenog</label>
+        </fieldset>
+
+        <table border="0"> <tbody>
+                <tr>
+                    <td>
+                        <button type="submit">Pošalji</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="reset">Poništi</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+
+</body>
+</html>
